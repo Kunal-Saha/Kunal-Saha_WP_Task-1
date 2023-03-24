@@ -1,0 +1,206 @@
+/*
+Theme Name:   Twenty Twenty One Child
+Theme URI:    http://example.com/twenty-Twenty-One-child/
+Description:  Twenty Twenty One Child Theme
+Author:       Kunal Saha
+Author URI:   http://ksaha.com
+Template:     twentytwentyone
+Version:      1.0.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  Html_to_WP
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background: #1f2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color : white;
+    padding :  20px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+ul > a {
+    font-size: 18px;
+    color : #e5e7eb
+}
+
+.Nav__header {
+    font-size: 24px;
+    color: #f9faf8
+}
+
+nav {
+    padding :1em 0;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav > ul {
+    display : flex;
+    gap: 2em;
+}
+
+.Hero {
+    padding: 4rem 0;
+    display : flex;
+    align-items: center;
+    gap : 10px;
+}
+
+.Hero > img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width :100%;
+    border-radius:  10px;
+    border: 5px solid #3882f6;
+}
+
+.Hero__title {
+    font-size: 48px;
+    font-weight: 900;
+    color : #031341;
+}
+
+
+.Hero__text {
+    padding :  20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #155ff3;
+}
+
+.Signup__button {
+    cursor: pointer;
+    padding :5px 25px;
+    background-color: #3882f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.Signup__button:hover{
+    background-color: white;
+    color :#3882f6;
+} 
+
+.Feature{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.Feature__header {
+    font-weight: 900;
+    font-size: 36px;
+    color: #1f2937;
+    padding: 20px;
+}
+
+.Feature > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px 10px;
+}
+
+.Feature__item > img {
+    width: 200px;
+    height: 200px;
+    border-radius:  10px;
+    border: 5px solid #3882f6;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 8rem 5rem;
+    background-color: #e5e7eb;
+    color : #1f2937
+}
+
+.quote > p {
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.quote > cite {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+.SignUp__callToAction{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #3882f6;
+    color: white;
+    border: none;
+    gap: 2em;
+    padding: 100px 50px;
+}
+
+
+.SignUp__callToAction > .Signup__button {
+    margin-left: auto;
+    border: 2px solid white;
+}
+
+footer {
+    color: #e5e7eb;
+    background-color: #1f2937;
+    padding: 20px;
+}
+
+footer > p {
+    text-align: center;
+}
+
+@media only screen and (min-width: 900px) {
+    header {
+        padding: 0 15rem;
+    }
+    .Hero > img {
+        display: block ;
+        width: 400px;
+    }
+    .Feature > div {
+        gap: 5rem;
+    }
+    .SignUp {
+        padding: 100px 200px ;
+    }
+    .SignUp__callToAction {
+        flex-direction: row;
+        border-radius: 10px;
+        padding: 50px 100px;
+    }
+}
